@@ -1,0 +1,19 @@
+
+ <div class="main">
+  <h1  class="heading mt-2 text-success">Custom Controls without CVA</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+      <ng-container *ngFor="let field of fields">
+        <app-text-feild
+          [custom]="field"
+          [inputField]="contactForm.get(field.key)"
+        ></app-text-feild>
+      </ng-container>
+       <br>
+       <button mat-raised-button color="primary" >
+       submit
+      </button>
+    </form>
+ </div>
+
+
+

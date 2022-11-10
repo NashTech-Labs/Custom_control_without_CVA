@@ -1,0 +1,17 @@
+small{
+color: red;
+}
+mat-form-field{
+width: 125%;
+}
+
+mat-radio-group{
+display: block;
+}
+.container{
+   margin-left: -70px;
+}
+
+.errormsg{
+margin-top: -20px;
+}
